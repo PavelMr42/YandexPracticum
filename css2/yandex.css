@@ -240,7 +240,7 @@ h3 {
     line-height: 25px;
     font-weight: 500;
     color: currentColor;
-    width: 25%;
+    width: 55%;
     justify-content: space-between;
 }
 
@@ -300,9 +300,22 @@ h3 {
 
 .menu-footer-item {
     display: grid;
-    grid-template-columns: repeat(3, 258px);
-    grid-template-rows: repeat(1, 227px);
+    grid-template-columns: repeat(2, 258px);
+    grid-template-rows: repeat(2, 100px);
     padding: 1px;
+}
+
+.box-1 {
+    order: 1;
+}
+
+.box-2 {
+    order: 2;
+}
+
+.box-3 {
+    grid-column: 2;
+    grid-row: 4;
 }
 
 .menu-footer-item > * {
@@ -313,9 +326,8 @@ h3 {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(4, 500px);
+    grid-template-columns: repeat(3, 600px);
     grid-template-rows: repeat(2, 227px);
-    padding-left: 350px;
     padding-bottom: 100px;
 }
 
@@ -323,4 +335,232 @@ h3 {
     margin: 5px;
     padding-top: 70px;
 }
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1000px;
+        max-width: 1000px;
+        min-width: auto;
+    }
+
+    .grid-card {
+        grid-template-columns: repeat(3, 330px);
+        grid-template-rows: repeat(4, 340px);
+    }
+    .menu-footer-item > * {
+        padding-left: 0;
+    }
+
+    .menu-footer-item {
+        grid-template-columns: repeat(2, 223px);
+        grid-template-rows: repeat(1, 204px);
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 490px);
+        grid-template-rows: repeat(2, 227px);
+        padding-bottom: 100px;
+    }
+
+    .lists li {
+        padding-bottom: 25px;
+    }
+
+    h3 {
+        padding-bottom: 12px;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+        max-width: 750px;
+    }
+
+    .grid-card {
+        grid-template-columns: repeat(2, 373px);
+        grid-template-rows: repeat(6, 340px);
+    }
+
+    .menu-footer-item {
+        grid-template-columns: repeat(2, 190px);
+        grid-template-rows: repeat(1, 207px);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3, 412px);
+        grid-template-rows: repeat(2, 263px);
+        padding-bottom: 35px;
+    }
+
+    .number-phone {
+        font-size: 20px;
+    }
+
+    .number-text {
+        font-size: 13px;
+    }
+
+    .footer-title {
+        font-size: 15px;
+    }
+
+    .lists a {
+        font-size: 13px;
+    }
+
+    .lists li {
+        padding-bottom: 26px;
+    }
+
+    .links {
+        width: 70%;
+    }
+
+    .license-agreement {
+        margin-top: 40px;
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        max-width: 100%;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .menu-footer-item {
+        grid-template-columns: repeat(2, 242px);
+        grid-template-rows: repeat(3, 60px);
+    }
+
+    .left-footer-block {
+        order: 2;
+    }
+
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .lists li {
+        padding-bottom: 20px;
+    }
+
+    .lists a {
+        font-size: 15px;
+    }
+
+    .box-1 {
+        order: 1;
+    }
+
+    .box-2 {
+       order: 2;
+    }
+
+    .box-3 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(1, 450px);
+        grid-template-rows: repeat(2, 375px);
+        padding-bottom: 115px;
+    }
+    .license-agreement {
+        font-size: 15px;
+    }
+
+    .number-phone {
+        font-size: 25px;
+    }
+
+    .number-text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .prof-card__main svg {
+        display: none;
+    }
+
+    .btn-menu .btn-menu-item {
+        display: none;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        padding: 0;
+    }
+
+    .bunner p {
+        font-size: 16px;
+    }
+
+    .title-card {
+        font-size: 15px;
+    }
+
+    .card-item .span-text1 {
+        padding-top: 15px;
+    }
+
+    .span-text1 {
+        font-size: 15px;
+    }
+
+    .grid-card {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(12, 155px);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .menu-footer-item {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 70px);
+    }
+
+    .footer-title {
+        font-size: 15px;
+    }
+
+    .lists a {
+        font-size: 12px;
+    }
+
+    .number-phone {
+        font-size: 20px;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    .license-agreement {
+        font-size: 12px;
+    }
+
+    .footer-phone {
+        padding: 40px 0 50px;
+    }
+
+}
+
 
